@@ -11,5 +11,9 @@
     <string name="module_credit">Module Credit</string>
     <string name="module_venue">Module Venue</string>
     <string name="module_code">Module Code</string>
+    <string name="academic_year">Academic Year</string>
+    <string name="semester">Semester</string>
+    <string name="total_modular_credits">Total Modular Credits</string>
+    <string name="modules">Modules</string>
 
 </resources>

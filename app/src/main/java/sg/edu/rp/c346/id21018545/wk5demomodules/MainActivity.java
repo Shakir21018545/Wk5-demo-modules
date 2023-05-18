@@ -1,32 +1,26 @@
 package sg.edu.rp.c346.id21018545.wk5demomodules;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
-
     TextView tv1, tv2, tv3, tv4, tv5;
+    Button btnSummary;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         tv1 = findViewById(R.id.textViewModule1);
         tv2 = findViewById(R.id.textViewModule2);
         tv3 = findViewById(R.id.textViewModule3);
         tv4 = findViewById(R.id.textViewModule4);
         tv5 = findViewById(R.id.textViewModule5);
-
-
-
+        btnSummary = findViewById(R.id.buttonSummary);
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, ModuleInformation.class);
                 intent.putExtra("ModuleCode", "C218");
                 intent.putExtra("ModuleName", "UI/UX DESIGN FOR APPS");
@@ -40,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, ModuleInformation.class);
                 intent.putExtra("ModuleCode", "C346");
                 intent.putExtra("ModuleName", "ANDROID PROGRAMMING");
@@ -51,11 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         tv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, ModuleInformation.class);
                 intent.putExtra("ModuleCode", "C203");
                 intent.putExtra("ModuleName", "WEB APPLICATION DEVELOPMENT");
@@ -69,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         tv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, ModuleInformation.class);
                 intent.putExtra("ModuleCode", "C105");
                 intent.putExtra("ModuleName", "INTRODUCTION TO PROGRAMMING");
@@ -83,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         tv5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(MainActivity.this, ModuleInformation.class);
                 intent.putExtra("ModuleCode", "C206");
                 intent.putExtra("ModuleName", "SOFTWARE DEVELOPMENT PROCESS");
@@ -94,8 +83,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
+        btnSummary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Summary.class);
+                intent.putExtra("AcademicYear", 2020);
+                intent.putExtra("Semester",1);
+                intent.putExtra("TotalModularCredits", 20 );
+                intent.putExtra("Modules", "C218, C346, C203, C105, C206");
+                //hardcoded
+                startActivity(intent);
+            }
+        });
     }
 }
