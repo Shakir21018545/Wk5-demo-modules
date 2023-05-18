@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Wk5 demo modules</string>
+    <string name="c218">C218 UI/UX DESIGN FOR APPS</string>
+    <string name="c346">C346 ANDROID PROGRAMMING</string>
+    <string name="c203">C203 WEB APPLICATION DEVELOPMENT</string>
+    <string name="C105">C105 INTRODUCTION TO PROGRAMMING</string>
+    <string name="c206">C206 SOFTWARE DEVELOPMENT PROCESS</string>
+    <string name="module_name">Module Name</string>
+    <string name="module_year">Module Year</string>
+    <string name="module_semester">Module Semester</string>
+    <string name="module_credit">Module Credit</string>
+    <string name="module_venue">Module Venue</string>
+    <string name="module_code">Module Code</string>
+
 </resources>

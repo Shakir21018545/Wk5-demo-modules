@@ -5,66 +5,64 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-
-
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:paddingBottom="20dp"
-        android:text="- - - -Y2S1 MODULES- - - -"
-        android:textSize="30dp" />
-
-    <TextView
-        android:id="@+id/textViewModule1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:paddingBottom="10dp"
-        android:text="@string/c218"
-        android:textSize="19dp" />
-
+        android:text="- - - - - - - - - - - - - - - - - -"
+        android:textSize="30dp"
+        />
     <TextView
-        android:id="@+id/textViewModule2"
+        android:id="@+id/textViewModuleCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="19dp"
-        android:paddingBottom="10dp"
-        android:text="@string/c346" />
+        android:text="@string/module_code"
+        android:textSize="19dp"/>
 
     <TextView
-        android:id="@+id/textViewModule3"
+        android:id="@+id/textViewModuleName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="19dp"
-        android:paddingBottom="10dp"
-        android:text="@string/c203" />
+        android:text="@string/module_name"
+        android:textSize="19dp"/>
 
     <TextView
-        android:id="@+id/textViewModule4"
+        android:id="@+id/textViewModuleYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:text="@string/C105"
-        android:textSize="19dp" />
+        android:text="@string/module_year"
+        android:textSize="19dp"/>
 
     <TextView
-        android:id="@+id/textViewModule5"
+        android:id="@+id/textViewModuleSemester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:text="@string/c206"
-        android:textSize="19dp" />
+        android:text="@string/module_semester"
+        android:textSize="19dp"/>
 
+    <TextView
+        android:id="@+id/textViewModuleCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/module_credit"
+        android:textSize="19dp"/>
+
+    <TextView
+        android:id="@+id/textViewModuleVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/module_venue"
+        android:textSize="19dp"/>
     <TextView
         android:id="@+id/textViewView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
-        android:paddingBottom="20dp"
+        android:paddingTop="10dp"
         android:text="- - - - - - - - - - - - - - - - - -"
         android:textSize="30dp" />
 
